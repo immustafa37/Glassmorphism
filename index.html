@@ -7,6 +7,7 @@
     <title>Glassmorphism UI Showcase</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="container">
         <header class="glass">
@@ -26,13 +27,12 @@
 
         <main>
             <h1>Glassmorphism UI Components</h1>
-            
+
             <!-- Buttons Section -->
-            <section id="buttons" class="component-section glass">
+            <section class="component-section glass">
                 <h2>Buttons</h2>
-                <p>Various glassmorphic button styles that work well on both light and dark backgrounds.</p>
-                
                 <div class="component-grid">
+                    <!-- Primary -->
                     <div class="component-card glass">
                         <div class="component-preview">
                             <button class="btn btn-primary">Primary</button>
@@ -51,14 +51,14 @@
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-
 .btn-primary:hover {
   background: rgba(106, 90, 205, 1);
   transform: translateY(-2px);
 }</pre>
                         </div>
                     </div>
-                    
+
+                    <!-- Secondary -->
                     <div class="component-card glass">
                         <div class="component-preview">
                             <button class="btn btn-secondary">Secondary</button>
@@ -67,8 +67,24 @@
                             <button class="copy-btn">Copy</button>
                             <pre>&lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;</pre>
                         </div>
+                        <div class="code-container">
+                            <button class="copy-btn">Copy</button>
+                            <pre>.btn-secondary {
+  background: rgba(255, 105, 180, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+  background: rgba(255, 105, 180, 1);
+  transform: translateY(-2px);
+}</pre>
+                        </div>
                     </div>
-                    
+
+                    <!-- Outline -->
                     <div class="component-card glass">
                         <div class="component-preview">
                             <button class="btn btn-outline">Outline</button>
@@ -77,46 +93,110 @@
                             <button class="copy-btn">Copy</button>
                             <pre>&lt;button class="btn btn-outline"&gt;Outline&lt;/button&gt;</pre>
                         </div>
+                        <div class="code-container">
+                            <button class="copy-btn">Copy</button>
+                            <pre>.btn-outline {
+  background: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}</pre>
+                        </div>
                     </div>
-                    
+
+                    <!-- Glass -->
                     <div class="component-card glass">
                         <div class="component-preview">
-                            <button class="btn btn-glass">Glass Button</button>
+                            <button class="btn btn-glass">Glass</button>
                         </div>
                         <div class="code-container">
                             <button class="copy-btn">Copy</button>
-                            <pre>&lt;button class="btn btn-glass"&gt;Glass Button&lt;/button&gt;</pre>
+                            <pre>&lt;button class="btn btn-glass"&gt;Glass&lt;/button&gt;</pre>
+                        </div>
+                        <div class="code-container">
+                            <button class="copy-btn">Copy</button>
+                            <pre>.btn-glass {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.25);
+}</pre>
                         </div>
                     </div>
                 </div>
             </section>
-            
+
+
             <!-- Cards Section -->
             <section id="cards" class="component-section glass">
                 <h2>Cards</h2>
                 <p>Glassmorphic card components perfect for displaying content with depth.</p>
-                
+
                 <div class="component-grid">
+
+                    <!-- Card with Image -->
                     <div class="component-card glass">
                         <div class="component-preview">
                             <div class="card glass">
                                 <div class="card-img"></div>
                                 <h3 class="card-title">Glass Card</h3>
-                                <p class="card-text">This is a sample glassmorphic card with an image placeholder and text content.</p>
+                                <p class="card-text">This is a sample glassmorphic card with an image placeholder and
+                                    text content.</p>
                                 <button class="btn btn-primary">View More</button>
                             </div>
                         </div>
+
+                        <!-- HTML Code -->
                         <div class="code-container">
                             <button class="copy-btn">Copy</button>
                             <pre>&lt;div class="card glass"&gt;
   &lt;div class="card-img"&gt;&lt;/div&gt;
   &lt;h3 class="card-title"&gt;Glass Card&lt;/h3&gt;
-  &lt;p class="card-text"&gt;Card content here.&lt;/p&gt;
+  &lt;p class="card-text"&gt;This is a sample glassmorphic card...&lt;/p&gt;
   &lt;button class="btn btn-primary"&gt;View More&lt;/button&gt;
 &lt;/div&gt;</pre>
                         </div>
+
+                        <!-- CSS Code -->
+                        <div class="code-container">
+                            <button class="copy-btn">Copy</button>
+                            <pre>.card {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.card-img {
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.card-title {
+  margin: 10px 0;
+}
+.card-text {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}</pre>
+                        </div>
                     </div>
-                    
+
+                    <!-- Simple Card -->
                     <div class="component-card glass">
                         <div class="component-preview">
                             <div class="card glass" style="text-align: center; padding: 30px;">
@@ -124,41 +204,73 @@
                                 <p class="card-text">Just text content with a glass background effect.</p>
                             </div>
                         </div>
+
+                        <!-- HTML Code -->
                         <div class="code-container">
                             <button class="copy-btn">Copy</button>
                             <pre>&lt;div class="card glass" style="text-align: center; padding: 30px;"&gt;
   &lt;h3 class="card-title"&gt;Simple Glass Card&lt;/h3&gt;
-  &lt;p class="card-text"&gt;Just text content.&lt;/p&gt;
+  &lt;p class="card-text"&gt;Just text content with a glass background effect.&lt;/p&gt;
 &lt;/div&gt;</pre>
                         </div>
+
+                        <!-- CSS Code -->
+                        <div class="code-container">
+                            <button class="copy-btn">Copy</button>
+                            <pre>.card {
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.card-text {
+  font-size: 1rem;
+  opacity: 0.9;
+}</pre>
+                        </div>
                     </div>
+
                 </div>
             </section>
-            
+
+
             <!-- Forms Section -->
             <section id="forms" class="component-section glass">
                 <h2>Forms</h2>
                 <p>Glassmorphic form elements with clean styling and good usability.</p>
-                
+
                 <div class="component-grid">
                     <div class="component-card glass">
+
+                        <!-- 👀 Preview -->
                         <div class="component-preview">
                             <form class="glass" style="padding: 20px; width: 100%;">
                                 <div class="form-group">
                                     <label for="name" class="form-label">Name</label>
-                                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" autocomplete="name">
+                                    <input type="text" id="name" name="name" class="form-control"
+                                        placeholder="Enter your name" autocomplete="name">
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" autocomplete="email">
+                                    <input type="email" id="email" name="email" class="form-control"
+                                        placeholder="Enter your email" autocomplete="email">
                                 </div>
                                 <div class="form-group">
                                     <label for="message" class="form-label">Message</label>
-                                    <textarea id="message" name="message" class="form-control" rows="3" placeholder="Your message" autocomplete="off"></textarea>
+                                    <textarea id="message" name="message" class="form-control" rows="3"
+                                        placeholder="Your message" autocomplete="off"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div>
+
+                        <!-- 💾 HTML Code -->
                         <div class="code-container">
                             <button class="copy-btn">Copy</button>
                             <pre>&lt;form class="glass"&gt;
@@ -175,21 +287,54 @@
   &lt;div class="form-group"&gt;
     &lt;label for="message" class="form-label"&gt;Message&lt;/label&gt;
     &lt;textarea id="message" name="message" class="form-control" 
-              rows="3" autocomplete="off"&gt;&lt;/textarea&gt;
+              rows="3" placeholder="Your message" autocomplete="off"&gt;&lt;/textarea&gt;
   &lt;/div&gt;
   &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
 &lt;/form&gt;</pre>
                         </div>
+
+                        <!-- 🎨 CSS Code -->
+                        <div class="code-container">
+                            <button class="copy-btn">Copy</button>
+                            <pre>.form-group {
+  margin-bottom: 15px;
+}
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.form-control {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-control:focus {
+  border-color: rgba(106, 90, 205, 0.7);
+  background: rgba(255, 255, 255, 0.15);
+}</pre>
+                        </div>
+
                     </div>
                 </div>
             </section>
-            
+
+
             <!-- Alerts Section -->
             <section id="alerts" class="component-section glass">
                 <h2>Alerts</h2>
                 <p>Glassmorphic alert messages for different notification types.</p>
-                
+
                 <div class="component-grid">
+                    <!-- Success Alert -->
                     <div class="component-card glass">
                         <div class="component-preview">
                             <div class="alert alert-success">
@@ -199,11 +344,22 @@
                         <div class="code-container">
                             <button class="copy-btn">Copy</button>
                             <pre>&lt;div class="alert alert-success"&gt;
-  &lt;strong&gt;Success!&lt;/strong&gt; Your action was successful.
+  &lt;strong&gt;Success!&lt;/strong&gt; This is a success alert.
 &lt;/div&gt;</pre>
                         </div>
+                        <div class="code-container">
+                            <button class="copy-btn">Copy</button>
+                            <pre>.alert-success {
+  background: rgba(40, 167, 69, 0.2);
+  color: #28a745;
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(40, 167, 69, 0.5);
+}</pre>
+                        </div>
                     </div>
-                    
+
+                    <!-- Warning Alert -->
                     <div class="component-card glass">
                         <div class="component-preview">
                             <div class="alert alert-warning">
@@ -213,11 +369,22 @@
                         <div class="code-container">
                             <button class="copy-btn">Copy</button>
                             <pre>&lt;div class="alert alert-warning"&gt;
-  &lt;strong&gt;Warning!&lt;/strong&gt; This needs your attention.
+  &lt;strong&gt;Warning!&lt;/strong&gt; This is a warning alert.
 &lt;/div&gt;</pre>
                         </div>
+                        <div class="code-container">
+                            <button class="copy-btn">Copy</button>
+                            <pre>.alert-warning {
+  background: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 193, 7, 0.5);
+}</pre>
+                        </div>
                     </div>
-                    
+
+                    <!-- Danger Alert -->
                     <div class="component-card glass">
                         <div class="component-preview">
                             <div class="alert alert-danger">
@@ -227,11 +394,22 @@
                         <div class="code-container">
                             <button class="copy-btn">Copy</button>
                             <pre>&lt;div class="alert alert-danger"&gt;
-  &lt;strong&gt;Error!&lt;/strong&gt; Something went wrong.
+  &lt;strong&gt;Error!&lt;/strong&gt; This is an error alert.
 &lt;/div&gt;</pre>
                         </div>
+                        <div class="code-container">
+                            <button class="copy-btn">Copy</button>
+                            <pre>.alert-danger {
+  background: rgba(220, 53, 69, 0.2);
+  color: #dc3545;
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(220, 53, 69, 0.5);
+}</pre>
+                        </div>
                     </div>
-                    
+
+                    <!-- Info Alert -->
                     <div class="component-card glass">
                         <div class="component-preview">
                             <div class="alert alert-info">
@@ -241,18 +419,29 @@
                         <div class="code-container">
                             <button class="copy-btn">Copy</button>
                             <pre>&lt;div class="alert alert-info"&gt;
-  &lt;strong&gt;Info!&lt;/strong&gt; Here's some information.
+  &lt;strong&gt;Info!&lt;/strong&gt; This is an info alert.
 &lt;/div&gt;</pre>
+                        </div>
+                        <div class="code-container">
+                            <button class="copy-btn">Copy</button>
+                            <pre>.alert-info {
+  background: rgba(23, 162, 184, 0.2);
+  color: #17a2b8;
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(23, 162, 184, 0.5);
+}</pre>
                         </div>
                     </div>
                 </div>
             </section>
-            
+
+
             <!-- Loaders Section -->
             <section id="loaders" class="component-section glass">
                 <h2>Loaders</h2>
                 <p>Animated loading indicators with glassmorphism effects.</p>
-                
+
                 <div class="component-grid">
                     <div class="component-card glass">
                         <div class="component-preview" style="height: 100px;">
@@ -281,12 +470,12 @@
                     </div>
                 </div>
             </section>
-            
+
             <!-- Toggles Section -->
             <section id="toggles" class="component-section glass">
                 <h2>Toggle Switches</h2>
                 <p>Glassmorphic toggle switches for settings and preferences.</p>
-                
+
                 <div class="component-grid">
                     <div class="component-card glass">
                         <div class="component-preview">
@@ -367,7 +556,8 @@ input:checked + .toggle-slider:before {
             </div>
         </div>
     </footer>
-    
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
