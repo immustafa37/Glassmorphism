@@ -11,7 +11,7 @@
     <div class="container">
         <header class="glass">
             <div class="logo">GlassUI</div>
-            <button class="nav-toggle" id="navToggle">☰</button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
             <nav id="mainNav">
                 <ul>
                     <li><a href="#buttons">Buttons</a></li>
@@ -100,16 +100,16 @@
                     <div class="component-card glass">
                         <div class="component-preview">
                             <div class="card glass">
-                                <img src="https://source.unsplash.com/random/300x200/?nature" alt="Sample" class="card-img">
+                                <div class="card-img"></div>
                                 <h3 class="card-title">Glass Card</h3>
-                                <p class="card-text">This is a sample glassmorphic card with an image and text content.</p>
+                                <p class="card-text">This is a sample glassmorphic card with an image placeholder and text content.</p>
                                 <button class="btn btn-primary">View More</button>
                             </div>
                         </div>
                         <div class="code-container">
                             <button class="copy-btn">Copy</button>
                             <pre>&lt;div class="card glass"&gt;
-  &lt;img src="image.jpg" alt="Sample" class="card-img"&gt;
+  &lt;div class="card-img"&gt;&lt;/div&gt;
   &lt;h3 class="card-title"&gt;Glass Card&lt;/h3&gt;
   &lt;p class="card-text"&gt;Card content here.&lt;/p&gt;
   &lt;button class="btn btn-primary"&gt;View More&lt;/button&gt;
@@ -146,15 +146,15 @@
                             <form class="glass" style="padding: 20px; width: 100%;">
                                 <div class="form-group">
                                     <label for="name" class="form-label">Name</label>
-                                    <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" autocomplete="name">
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" autocomplete="email">
                                 </div>
                                 <div class="form-group">
                                     <label for="message" class="form-label">Message</label>
-                                    <textarea id="message" class="form-control" rows="3" placeholder="Your message"></textarea>
+                                    <textarea id="message" name="message" class="form-control" rows="3" placeholder="Your message" autocomplete="off"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
@@ -164,15 +164,18 @@
                             <pre>&lt;form class="glass"&gt;
   &lt;div class="form-group"&gt;
     &lt;label for="name" class="form-label"&gt;Name&lt;/label&gt;
-    &lt;input type="text" id="name" class="form-control" placeholder="Enter your name"&gt;
+    &lt;input type="text" id="name" name="name" class="form-control" 
+           placeholder="Enter your name" autocomplete="name"&gt;
   &lt;/div&gt;
   &lt;div class="form-group"&gt;
     &lt;label for="email" class="form-label"&gt;Email&lt;/label&gt;
-    &lt;input type="email" id="email" class="form-control" placeholder="Enter your email"&gt;
+    &lt;input type="email" id="email" name="email" class="form-control" 
+           placeholder="Enter your email" autocomplete="email"&gt;
   &lt;/div&gt;
   &lt;div class="form-group"&gt;
     &lt;label for="message" class="form-label"&gt;Message&lt;/label&gt;
-    &lt;textarea id="message" class="form-control" rows="3"&gt;&lt;/textarea&gt;
+    &lt;textarea id="message" name="message" class="form-control" 
+              rows="3" autocomplete="off"&gt;&lt;/textarea&gt;
   &lt;/div&gt;
   &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
 &lt;/form&gt;</pre>
@@ -288,14 +291,14 @@
                     <div class="component-card glass">
                         <div class="component-preview">
                             <label class="toggle-switch">
-                                <input type="checkbox">
+                                <input type="checkbox" id="toggle-example" name="toggle-example">
                                 <span class="toggle-slider"></span>
                             </label>
                         </div>
                         <div class="code-container">
                             <button class="copy-btn">Copy</button>
                             <pre>&lt;label class="toggle-switch"&gt;
-  &lt;input type="checkbox"&gt;
+  &lt;input type="checkbox" id="toggle-example" name="toggle-example"&gt;
   &lt;span class="toggle-slider"&gt;&lt;/span&gt;
 &lt;/label&gt;</pre>
                         </div>
@@ -353,6 +356,18 @@ input:checked + .toggle-slider:before {
         </main>
     </div>
 
+    <footer class="glass">
+        <div class="footer-content">
+            <p>© 2023 Glassmorphism UI Components. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
